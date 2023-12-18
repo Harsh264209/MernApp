@@ -4,7 +4,7 @@ const bodyParser=require('body-parser')
 const cors=require('cors')
 const app=express()
 const mongoose=require('mongoose')
-const userRoutes = require('./Routes/UserRoutes');
+const userRoutes = require('./Routes/userRoutes');
 const dbConnect=process.env.Db_String
 const port=process.env.port || 5000
 
