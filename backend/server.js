@@ -5,7 +5,7 @@ const cors=require('cors')
 const app=express()
 const mongoose=require('mongoose')
 const userRoutes = require('./Routes/userRoutes');
-const dbConnect=process.env.Db_String || "mongodb://127.0.0.1:27017"
+const dbConnect=process.env.Db_String || "mongodb://0.0.0.0:27017"
 const port=process.env.port || 5000
 
 app.use(express.json())
